@@ -1,0 +1,9 @@
+<h1>Modules</h1>
+<div class="card">
+    <div class="card-header">Modules:</div>
+    <div class="card-body p-2" *ngFor="let module of modules; let last = last" [ngClass]="{'border-bottom': !last }" (click)="addModule(module)">
+        <b>{{ module.name }}</b><br>
+        <span class="small">cost: {{ module.cost | currency:'EUR':'' }}</span>
+    </div>
+</div>
+<a routerLink="../features">Features</a>

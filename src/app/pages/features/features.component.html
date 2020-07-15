@@ -1,0 +1,10 @@
+<h1>Features</h1>
+<div class="card">
+    <div class="card-header">Features:</div>
+    <div class="card-body p-2" *ngFor="let feature of features; let last = last" [ngClass]="{'border-bottom': !last }" (click)="addFeature(feature)">
+        <b>{{ feature.name }}</b><br>
+        <span class="small">cost: {{ feature.cost }}%</span><br>
+        <span class="small">{{ feature.benefit }}</span>
+    </div>
+</div>
+<a routerLink="../home">Home</a>

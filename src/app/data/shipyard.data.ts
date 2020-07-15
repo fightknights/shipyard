@@ -10,11 +10,13 @@ export const Shipyards: IShipyard[] = [
         bonusses: [
             {
                 spec: 'maneuver',
-                bonus: 1
+                bonus: 1,
+                basedOnClass: false
             },
             {
                 spec: 'signature',
-                bonus: 1
+                bonus: 1,
+                basedOnClass: false
             }
         ]
     },
@@ -27,11 +29,13 @@ export const Shipyards: IShipyard[] = [
         bonusses: [
             {
                 spec: 'ep',
-                bonus: 1
+                bonus: 1,
+                basedOnClass: false
             },
             {
                 spec: 'hp',
-                bonus: -1
+                bonus: -1,
+                basedOnClass: false
             }
         ]
     },
@@ -52,11 +56,13 @@ export const Shipyards: IShipyard[] = [
         bonusses: [
             {
                 spec: 'hp',
-                bonus: 1
+                bonus: 1,
+                basedOnClass: false
             },
             {
                 spec: 'armor',
-                bonus: -2
+                bonus: -2,
+                basedOnClass: false
             }
         ]
     },
@@ -65,15 +71,17 @@ export const Shipyards: IShipyard[] = [
         name: 'Halgria',
         system: 'Between Kua and Coriolis',
         costPercent: -5,
-        text: 'Cheap freighters of low quality, also bulk haulers. -1 to Maneuverabilityl, but + {Class) extra modules. -5% to base price.',
+        text: 'Cheap freighters of low quality, also bulk haulers. -1 to Maneuverabilityl, but + {Class} extra modules. -5% to base price.',
         bonusses: [
             {
                 spec: 'maneuver',
-                bonus: -1
+                bonus: -1,
+                basedOnClass: false
             },
             {
                 spec: 'modules',
-                bonus: 4
+                bonus: 0,
+                basedOnClass: true
             }
         ]
     },
@@ -82,11 +90,17 @@ export const Shipyards: IShipyard[] = [
         name: 'Daharab',
         system: 'Sadaal B',
         costPercent: 5,
-        text: 'Freighters and battleships with illegal armaments. -1 to extra modules, but + (Class) modules reserved for weapons. +5% to base price.',
+        text: 'Freighters and battleships with illegal armaments. -1 to extra modules, but + {Class} modules reserved for weapons. +5% to base price.',
         bonusses: [
             {
                 spec: 'modules',
-                bonus: 3
+                bonus: -1,
+                basedOnClass: false
+            },
+            {
+                spec: 'modules',
+                bonus: 0,
+                basedOnClass: true
             }
         ]
     }

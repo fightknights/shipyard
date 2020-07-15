@@ -10,4 +10,5 @@ export interface IShipyard {
 export interface IShipyardBonus {
     spec: string;
     bonus: number;
+    basedOnClass: boolean;
 }

@@ -1,0 +1,9 @@
+<h1>Shipyard</h1>
+<div class="card">
+    <div class="card-header">Shipyards:</div>
+    <div class="card-body p-2" *ngFor="let shipyard of shipyards; let last = last" [ngClass]="{'border-bottom': !last }" (click)="selectShipyard(shipyard)">
+        <b>{{ shipyard.name }}</b> - {{ shipyard.system }}<br>
+        <span class="small">{{ shipyard.text }}</span>
+    </div>
+</div>
+<a routerLink="../problem">Ship problem</a>
