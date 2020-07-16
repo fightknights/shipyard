@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\pages",
-    "\\src\\app\\pages\\features",
     "\\src\\app\\pages\\home",
     "\\src\\app\\pages\\modules",
     "\\src\\app\\pages\\problem",
     "\\src\\app\\pages\\ship-type",
-    "\\src\\app\\pages\\shipyard"
+    "\\src\\app\\pages\\shipyard",
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\services\\ship.service.ts",
+  "SelectedNode": "\\src\\app\\pages\\features\\features.component.ts",
   "PreviewInSolutionExplorer": false
 }
