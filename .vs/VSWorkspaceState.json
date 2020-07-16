@@ -3,9 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\data",
-    "\\src\\app\\models",
-    "\\src\\app\\services"
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\features",
+    "\\src\\app\\pages\\home",
+    "\\src\\app\\pages\\modules",
+    "\\src\\app\\pages\\problem",
+    "\\src\\app\\pages\\ship-type",
+    "\\src\\app\\pages\\shipyard"
   ],
   "SelectedNode": "\\src\\app\\services\\ship.service.ts",
   "PreviewInSolutionExplorer": false
