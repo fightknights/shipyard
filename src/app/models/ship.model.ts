@@ -72,12 +72,19 @@ export interface IShipProblem {
     summary: string;
 }
 
+export interface IShipModuleGroup {
+    id: number;
+    name: string;
+    modules: IShipModule[];
+}
+
 export interface IShipModule {
     id: number;
     name: string;
     text: string;
     cost: number;
     selected: boolean;
+    multiplePossible: boolean;
 }
 
 export interface IShipFeature {
@@ -86,9 +93,22 @@ export interface IShipFeature {
     benefit: string;
     cost: number;
     bonusses: IShipFeatureBonus[];
+    multiplePossible: boolean;
+    maximumAmount?: IMaximumFeatureAmount[];
+    amount?: number;
 }
 
 export interface IShipFeatureBonus {
     spec: string;
     bonus: number;
+}
+
+export interface IClassBonusTable {
+    classNr: number;
+    bonus: number;
+}
+
+export interface IMaximumFeatureAmount {
+    classNr: number;
+    max: number;
 }

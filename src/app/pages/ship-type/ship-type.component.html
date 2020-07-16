@@ -2,9 +2,9 @@
 <div class="card" *ngFor="let group of shipTypeGroups">
     <div class="card-header">Class: {{ group.name }}</div>
     <div class="card-body flex-wrap d-flex p-0">
-        <div class="border w-50 p-1" *ngFor="let type of group.types" (click)="pickShip(type)">
+        <div class="border pointer w-50 p-1" *ngFor="let type of group.types" (click)="pickShip(type)">
             <span><b>{{ type.name }}</b></span><br />
-            <span class="small">{{ type.groups }}</span>
+            <span class="small">{{ type.groupConcepts }}</span>
         </div>
     </div>
 </div>

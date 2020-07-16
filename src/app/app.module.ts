@@ -9,6 +9,7 @@ import { ShipyardComponent } from './pages/shipyard/shipyard.component';
 import { ProblemComponent } from './pages/problem/problem.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { ModulesComponent } from './pages/modules/modules.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ModulesComponent } from './pages/modules/modules.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

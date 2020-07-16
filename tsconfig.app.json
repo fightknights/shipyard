@@ -5,7 +5,9 @@
     "types": [],
     "target": "ES6",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata":  true
+    "emitDecoratorMetadata": true,
+    "baseUrl": "src"
+  },
   "files": [
     "src/main.ts",
     "src/polyfills.ts"

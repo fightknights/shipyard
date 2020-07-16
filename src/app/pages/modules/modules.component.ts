@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IShipModule } from '../../models/ship.model';
-import { ShipModules } from '../../data/module.data';
+import { IShipModuleGroup, IShipModule } from '../../models/ship.model';
+import { ShipModuleGroups } from '../../data/module.data';
 
 @Component({
   selector: 'app-modules',
@@ -9,7 +9,7 @@ import { ShipModules } from '../../data/module.data';
 })
 export class ModulesComponent implements OnInit {
 
-    public modules: IShipModule[] = ShipModules;
+    public modules: IShipModuleGroup[] = ShipModuleGroups;
 
     constructor() { }
 

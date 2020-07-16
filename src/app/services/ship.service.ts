@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Ship, ShipSpecs } from '../models/ship.model';
+import { Ship, ShipSpecs, IShipType, IShipProblem, IShipFeature, IShipModule } from '../models/ship.model';
+import { IShipyard } from '../models/shipyard.model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,8 @@ export class ShipService {
             cost = cost + this.ship.class.cost;
         }
 
-        if (this.ship.shipyard && this.ship.shipyard.id) {
+        // Shipyard cost adds to baseprice
+        if (this.ship.shipyard) {
             const modifier = this.ship.shipyard.costPercent;
             cost = cost * (1 + (modifier / 100));
         }
@@ -61,5 +63,39 @@ export class ShipService {
         });
     }
 
-    select
+    public newShip() {
+        this.ship = new Ship();
+        this.shipData.next(this.ship);
+    }
+
+    public selectShipType(shipType: IShipType) {
+        this.ship.type = shipType;
+        this.updateShipAndCalculate();
+    }
+
+    public selectShipyard(shipyard: IShipyard) {
+        this.ship.shipyard = shipyard;
+        this.updateShipAndCalculate();
+    }
+
+    public selectProblem(problem: IShipProblem) {
+        this.ship.problem = problem;
+        this.updateShipAndCalculate();
+    }
+
+    public updateFeatures(features: IShipFeature[]) {
+        this.ship.features = features;
+        this.updateShipAndCalculate();
+    }
+
+    public updateModules(modules: IShipModule[]) {
+        this.ship.modules = modules;
+        this.updateShipAndCalculate();
+    }
+
+    private updateShipAndCalculate() {
+        this.calculateCost();
+        this.calculateSpecs();
+        this.shipData.next(this.ship);
+    }
 }

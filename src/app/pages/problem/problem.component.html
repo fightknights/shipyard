@@ -1,7 +1,7 @@
 <h1>Problems</h1>
 <div class="card">
     <div class="card-header">Problems:</div>
-    <div class="card-body p-2" *ngFor="let problem of problems; let last = last" [ngClass]="{'border-bottom': !last }" (click)="selectProblem(problem)">
+    <div class="card-body pointer p-2" *ngFor="let problem of problems; let last = last" [ngClass]="{'border-bottom': !last }" (click)="selectProblem(problem)">
         <b>{{ problem.name }}</b><br>
         <span class="small">{{ problem.text }}</span>
     </div>
