@@ -7,7 +7,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Reduces damage by 3 for one attack only',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives +1 when launching countermeasures',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 3,
@@ -23,7 +25,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives +1 when locking onto targets.',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives -1 to the target ships countermeasures',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 5,
@@ -39,7 +43,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives +1 when firing a specific weapon system.',
         cost: 20,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 6,
@@ -47,7 +52,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Can repair Advanced technology.',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 7,
@@ -64,7 +70,8 @@ export let ShipFeatures: IShipFeature[] = [
                 bonus: 1
             }
         ],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 8,
@@ -72,7 +79,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Helps the crew recover Mind Points',
         cost: 5,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 9,
@@ -80,7 +88,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Land on/take off from planets.',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 10,
@@ -88,7 +97,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Bonus +1 to portal jumps.',
         cost: 5,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 11,
@@ -108,7 +118,8 @@ export let ShipFeatures: IShipFeature[] = [
             { classNr: 3, max: 4 },
             { classNr: 4, max: 8 },
             { classNr: 5, max: 16 }
-        ]
+        ],
+        amount: 0
     },
     {
         id: 12,
@@ -116,7 +127,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Protects against explosive decompression.',
         cost: 20,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 13,
@@ -124,7 +136,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Escape pod on the bridge',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 14,
@@ -139,7 +152,8 @@ export let ShipFeatures: IShipFeature[] = [
             { classNr: 3, max: 4 },
             { classNr: 4, max: 8 },
             { classNr: 5, max: 16 }
-        ]
+        ],
+        amount: 0
     },
     {
         id: 15,
@@ -156,7 +170,8 @@ export let ShipFeatures: IShipFeature[] = [
                 bonus: 1
             }
         ],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 16,
@@ -164,7 +179,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives you +3 to CULTURE or SCIENCE rolls',
         cost: 5,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 17,
@@ -172,7 +188,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Bonus +2 to PILOT when docking or landing',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 18,
@@ -180,7 +197,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives +3 EP when overloading reactor',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 19,
@@ -188,7 +206,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives +1 to SCIENCE for analyses',
         cost: 5,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 20,
@@ -201,7 +220,8 @@ export let ShipFeatures: IShipFeature[] = [
                 bonus: 1
             }
         ],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 21,
@@ -209,7 +229,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Enables salvaging.',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 22,
@@ -217,7 +238,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives +1 to all sensor rolls',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 23,
@@ -225,7 +247,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Versatile AI, all attribute scores 1, relevant skill levels 3.',
         cost: 30,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 24,
@@ -240,7 +263,8 @@ export let ShipFeatures: IShipFeature[] = [
             { classNr: 3, max: 4 },
             { classNr: 4, max: 4 },
             { classNr: 5, max: 4 }
-        ]
+        ],
+        amount: 0
     },
     {
         id: 25,
@@ -253,7 +277,8 @@ export let ShipFeatures: IShipFeature[] = [
                 bonus: -1
             }
         ],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 26,
@@ -266,7 +291,8 @@ export let ShipFeatures: IShipFeature[] = [
                 bonus: 1
             }
         ],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 27,
@@ -282,7 +308,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Gives bonus to MEDICURGY rolls.',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 29,
@@ -290,7 +317,8 @@ export let ShipFeatures: IShipFeature[] = [
         benefit: 'Bonus +2 to the advance/retreat action.',
         cost: 10,
         bonusses: [],
-        multiplePossible: false
+        multiplePossible: false,
+        amount: 0
     },
     {
         id: 30,
@@ -314,6 +342,7 @@ export let ShipFeatures: IShipFeature[] = [
             { classNr: 3, max: 2 },
             { classNr: 4, max: 2 },
             { classNr: 5, max: 2 }
-        ]
+        ],
+        amount: 0
     }
 ];

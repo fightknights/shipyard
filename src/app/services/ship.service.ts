@@ -15,23 +15,21 @@ export class ShipService {
     constructor() { }
 
     public calculateCost() {
-        let cost = 0;
-
-        if (this.ship.class && this.ship.class.cost) {
-            cost = cost + this.ship.class.cost;
-        }
+        const startingCost = this.ship.class ? this.ship.class.cost : 0;
+        let cost = startingCost;
 
         // Shipyard cost adds to baseprice
         if (this.ship.shipyard) {
             const modifier = this.ship.shipyard.costPercent;
-            cost = cost * (1 + (modifier / 100));
+            cost += startingCost * (1 + (modifier / 100));
         }
 
         let featureMod = 0;
         this.ship.features.forEach((feature) => {
             featureMod = featureMod + feature.cost;
         });
-        cost = cost * (1 + (featureMod / 100));
+
+        cost += startingCost * (1 + (featureMod / 100));
 
         this.ship.modules.forEach((module) => {
             cost = cost + module.cost;
@@ -47,10 +45,15 @@ export class ShipService {
             this.ship.specs = new ShipSpecs();
         }
 
-        if (this.ship.shipyard && this.ship.shipyard.bonusses) {
-            const bonusses = this.ship.shipyard.bonusses;
-            bonusses.forEach((bonus) => {
-                this.ship.specs[bonus.spec] = this.ship.specs[bonus.spec] + bonus.bonus;
+        if (this.ship.shipyard) {
+            this.ship.shipyard.bonusses.forEach((bonus) => {
+                let specBonus = bonus.bonus;
+
+                if (bonus.basedOnClass && this.ship.class) {
+                    specBonus = this.ship.class.id;
+                }
+
+                this.ship.specs[bonus.spec] = this.ship.specs[bonus.spec] + specBonus;
             });
         }
 

@@ -3,12 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\data",
+    "\\src\\app\\models",
     "\\src\\app\\pages",
-    "\\src\\app\\pages\\features",
-    "\\src\\app\\pages\\ship-type",
+    "\\src\\app\\pages\\modules",
+    "\\src\\app\\pages\\problem",
     "\\src\\app\\pages\\shipyard",
     "\\src\\app\\services"
   ],
-  "SelectedNode": "\\tsconfig.app.json",
+  "SelectedNode": "\\src\\app\\pages\\features\\features.component.ts",
   "PreviewInSolutionExplorer": false
 }
